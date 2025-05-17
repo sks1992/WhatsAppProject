@@ -26,6 +26,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import sk.sksv.whatsappproject.R
+import sk.sksv.whatsappproject.presentation.bottom_navigation.BottomNavigation
 import sk.sksv.whatsappproject.presentation.chat_box.ChatListModel
 
 @Composable
@@ -96,6 +97,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
                 )
             }
         },
+        bottomBar = { BottomNavigation() }
     ) {
         Column(modifier = Modifier.padding(it)) {
             Spacer(modifier = Modifier.height(8.dp))
